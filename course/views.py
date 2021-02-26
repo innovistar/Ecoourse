@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from django.conf import settings
 #from django.core.mail import send_mail
 
-from courses.models import course,  Topic, Events, Books, Notification
+from course.models import Course,  Topic, Events, Books, Notification
 from .serializers import CourseSerializer, TopicSerializer, EventsSerializer, NotificationSerializer, BooksSerializer
 
 from rest_framework.response import Response
