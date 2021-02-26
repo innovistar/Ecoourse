@@ -62,10 +62,12 @@ class TopicListView(ListAPIView):
 
 	
 class CourseCreateAPIView(CreateAPIView):
+	permission_classes = ([AllowAny])
 	queryset = Course.objects.all()
 	serializer_class = CourseSerializer                
 
 class TopicCreateAPIView(CreateAPIView):
+	permission_classes = ([AllowAny])
 	queryset = Topic.objects.all()
 	serializer_class = TopicSerializer
 
