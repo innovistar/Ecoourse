@@ -1,4 +1,4 @@
-from courses.models import Course, Topic, Events, Books, Notification
+from course.models import Course, Topic, Events, Books, Notification
 
 from rest_framework import serializers
 
