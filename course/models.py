@@ -4,7 +4,7 @@ from django.db import models
 class Course(models.Model):
     #user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True, blank=True)
     title = models.CharField(max_length=200)
-    image = models.ImageField(null=True, blank=True)
+    #image = models.ImageField(null=True, blank=True)
     image_url = models.CharField(max_length=2000, null=True, blank=True)
     #course = EmbedVideoField(null=True)
     url = models.CharField(max_length=2000, null=True, blank=True)
@@ -41,7 +41,7 @@ class Notification(models.Model):
 		return self.notice
 	
 class Books(models.Model):
-	image = models.ImageField(null=True, blank=True)
+	#image = models.ImageField(null=True, blank=True)
 	title = models.CharField(max_length=200)
 	note = models.CharField(max_length=10000, null=True, blank=True)
 	image_url = models.CharField(max_length=2000, null=True, blank=True)
